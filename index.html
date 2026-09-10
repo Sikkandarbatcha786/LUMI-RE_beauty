@@ -1,0 +1,3773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lumière Beauty | Luxury Beauty & Bridal Studio</title>
+
+
+<!-- GOOGLE FONTS -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+rel="stylesheet"
+>
+
+
+<style>
+
+/* =====================================================
+   BASIC RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff9f6;
+    color: #633f3b;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+nav {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 82px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 100;
+
+    background: rgba(255, 249, 246, 0.94);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(185, 130, 125, 0.16);
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: #633f3b;
+
+    line-height: 1;
+}
+
+
+.logo small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #a87872;
+}
+
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.nav-links a {
+
+    position: relative;
+
+    color: #633f3b;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+
+    color: #a96f6a;
+}
+
+
+/* NAV UNDERLINE */
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -9px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #b9827d;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover::after {
+
+    width: 100%;
+}
+
+
+/* BOOK APPOINTMENT BUTTON */
+
+.book-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 42px;
+
+    padding: 0 25px;
+
+    border: 1px solid #b9827d;
+
+    border-radius: 30px;
+
+    color: #633f3b;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.6px;
+
+    transition: 0.3s;
+}
+
+
+.book-btn:hover {
+
+    background: #b9827d;
+
+    color: white;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 7% 80px;
+
+    color: #633f3b;
+
+
+    /* SOFT BLUSH OVERLAY + HERO IMAGE */
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(255, 239, 236, 0.78) 0%,
+
+            rgba(255, 245, 242, 0.40) 32%,
+
+            rgba(255, 250, 247, 0.10) 55%,
+
+            rgba(255, 255, 255, 0.00) 75%
+
+        ),
+
+        url("img/hero.jpg")
+
+        center center / cover no-repeat;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 48%;
+
+    max-width: 620px;
+}
+
+
+/* SMALL HEADING */
+
+.hero-small {
+
+    margin-bottom: 23px;
+
+    color: #a96f6a;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    line-height: 1.5;
+}
+
+
+/* MAIN HERO TITLE */
+
+.hero h1 {
+
+    margin: 0 0 25px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(68px, 7vw, 105px);
+
+    font-weight: 600;
+
+    letter-spacing: -2px;
+
+    line-height: 0.82;
+
+    color: #633f3b;
+}
+
+
+/* HERO DESCRIPTION */
+
+.hero p {
+
+    max-width: 470px;
+
+    margin: 0 0 30px;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+/* GENERAL BUTTON */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 45px;
+
+    padding: 0 25px;
+
+    border-radius: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.7px;
+
+    transition: 0.3s;
+}
+
+
+/* PRIMARY BUTTON */
+
+.btn-gold {
+
+    background: #b9827d;
+
+    color: white;
+
+    border: 1px solid #b9827d;
+
+    box-shadow: 0 8px 22px rgba(185, 130, 125, 0.20);
+}
+
+
+.btn-gold:hover {
+
+    background: #a96f6a;
+
+    border-color: #a96f6a;
+
+    transform: translateY(-2px);
+}
+
+
+/* SECONDARY BUTTON */
+
+.btn-outline {
+
+    background: rgba(255, 255, 255, 0.30);
+
+    border: 1px solid #b9827d;
+
+    color: #633f3b;
+}
+
+
+.btn-outline:hover {
+
+    background: #b9827d;
+
+    color: white;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+
+        min-height: 800px;
+
+        padding: 140px 8% 70px;
+
+        background-position: 60% center;
+    }
+
+    .hero-content {
+
+        width: 65%;
+    }
+
+    .hero h1 {
+
+        font-size: 75px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+
+        height: 72px;
+
+        padding: 0 5%;
+    }
+
+    .logo {
+
+        font-size: 26px;
+
+        letter-spacing: 4px;
+    }
+
+    .logo small {
+
+        font-size: 6px;
+
+        letter-spacing: 2px;
+    }
+
+    .book-btn {
+
+        height: 36px;
+
+        padding: 0 14px;
+
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+    .hero {
+
+        min-height: 760px;
+
+        padding: 130px 7% 60px;
+
+        background-position: 62% center;
+    }
+
+    .hero-content {
+
+        width: 100%;
+    }
+
+    .hero-small {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+
+        font-size: 62px;
+
+        line-height: 0.85;
+    }
+
+    .hero p {
+
+        max-width: 350px;
+
+        font-size: 11px;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .btn {
+
+        min-height: 42px;
+
+        padding: 0 20px;
+    }
+}
+/* =====================================================
+   LUXURY FEATURE STRIP
+===================================================== */
+
+.feature-strip {
+
+    width: 100%;
+
+    min-height: 58px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f5dfdc;
+
+    border-top: 1px solid rgba(185,130,125,0.12);
+
+    border-bottom: 1px solid rgba(185,130,125,0.12);
+}
+
+
+.feature-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 11px;
+
+    flex: 1;
+
+    color: #633f3b;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+
+/* FOUR-PETAL FLOWER ICON */
+
+.flower-icon {
+
+    width: 17px;
+
+    height: 17px;
+
+    position: relative;
+
+    display: inline-block;
+
+    flex-shrink: 0;
+}
+
+
+.flower-icon i {
+
+    position: absolute;
+
+    width: 7px;
+
+    height: 7px;
+
+    background: #b9827d;
+
+    border-radius: 70% 30% 70% 30%;
+
+    left: 5px;
+
+    top: 5px;
+
+    transform-origin: 3.5px 3.5px;
+}
+
+
+/* TOP */
+
+.flower-icon i:nth-child(1) {
+
+    transform:
+        translateY(-4px)
+        rotate(45deg);
+}
+
+
+/* RIGHT */
+
+.flower-icon i:nth-child(2) {
+
+    transform:
+        translateX(4px)
+        rotate(135deg);
+}
+
+
+/* BOTTOM */
+
+.flower-icon i:nth-child(3) {
+
+    transform:
+        translateY(4px)
+        rotate(225deg);
+}
+
+
+/* LEFT */
+
+.flower-icon i:nth-child(4) {
+
+    transform:
+        translateX(-4px)
+        rotate(315deg);
+}
+
+
+/* DIVIDERS */
+
+.feature-divider {
+
+    width: 1px;
+
+    height: 20px;
+
+    background: rgba(185,130,125,0.35);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .feature-strip {
+
+        padding: 15px 5%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+
+    .feature-divider {
+
+        display: none;
+    }
+
+
+    .feature-item {
+
+        font-size: 7px;
+
+        letter-spacing: 1.2px;
+    }
+
+
+    .flower-icon {
+
+        width: 14px;
+
+        height: 14px;
+    }
+
+}
+/* =====================================================
+   SIGNATURE SERVICES
+===================================================== */
+
+.signature-section {
+
+    padding: 70px 7% 75px;
+
+    background: #fffaf8;
+
+}
+
+
+/* HEADER */
+
+.signature-header {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.section-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.signature-header h2 {
+
+    margin: 0;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 46px;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+.view-services {
+
+    color: #a96f6a;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+
+.view-services:hover {
+
+    color: #633f3b;
+}
+
+
+/* SERVICE CARDS */
+
+.service-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.service-card {
+
+    position: relative;
+
+    height: 310px;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    background: #ead4d0;
+
+    cursor: pointer;
+}
+
+
+.service-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.7s ease;
+}
+
+
+.service-card:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* IMAGE OVERLAY */
+
+.service-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 55%;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(80,45,42,0.72),
+            rgba(80,45,42,0.18),
+            transparent
+        );
+
+    z-index: 1;
+}
+
+
+/* CARD CONTENT */
+
+.service-overlay {
+
+    position: absolute;
+
+    left: 22px;
+
+    right: 22px;
+
+    bottom: 20px;
+
+    z-index: 2;
+
+    color: white;
+}
+
+
+.service-overlay h3 {
+
+    margin: 0 0 3px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+.service-overlay p {
+
+    margin: 0 0 18px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    color: rgba(255,255,255,0.92);
+}
+
+
+.service-overlay a {
+
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.service-overlay a:hover {
+
+    color: #f4d2cd;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .signature-section {
+
+        padding: 55px 6%;
+    }
+
+
+    .signature-header {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+
+    .signature-header h2 {
+
+        font-size: 40px;
+    }
+
+
+    .service-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+
+        height: 330px;
+    }
+
+}
+/* =====================================================
+   LUMIÈRE EXPERIENCE
+===================================================== */
+
+.experience-section {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 44% 56%;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 65px 7%;
+
+    background: #f8e9e5;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   SALON IMAGE
+===================================================== */
+
+.experience-image {
+
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.experience-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+
+.experience-image:hover img {
+
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   EXPERIENCE CONTENT
+===================================================== */
+
+.experience-content {
+
+    padding-right: 5%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* SMALL LABEL */
+
+.experience-content .section-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+/* MAIN HEADING */
+
+.experience-content h2 {
+
+    margin: 0 0 17px;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 43px;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+}
+
+
+/* DESCRIPTION */
+
+.experience-text {
+
+    max-width: 500px;
+
+    margin: 0 0 35px;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    line-height: 1.75;
+}
+
+
+/* =====================================================
+   THREE EXPERIENCE STEPS
+===================================================== */
+
+.experience-steps {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.experience-step {
+
+    padding-right: 22px;
+
+    min-height: 90px;
+}
+
+
+.experience-step + .experience-step {
+
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(185,130,125,0.35);
+}
+
+
+/* NUMBER */
+
+.step-number {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #b9827d;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+/* STEP TITLE */
+
+.experience-step h3 {
+
+    margin: 0 0 8px;
+
+    color: #633f3b;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+}
+
+
+/* STEP DESCRIPTION */
+
+.experience-step p {
+
+    margin: 0;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CHERRY BLOSSOM
+===================================================== */
+
+.experience-flower {
+
+    position: absolute;
+
+    right: -25px;
+
+    bottom: -80px;
+
+    width: 260px;
+
+    height: auto;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    opacity: 0.72;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .experience-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 55px 6%;
+    }
+
+
+    .experience-image {
+
+        height: 300px;
+    }
+
+
+    .experience-content {
+
+        padding-right: 0;
+    }
+
+
+    .experience-content h2 {
+
+        font-size: 40px;
+    }
+
+
+    .experience-text {
+
+        font-size: 10px;
+    }
+
+
+    .experience-steps {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .experience-step {
+
+        padding: 0 !important;
+
+        min-height: auto;
+    }
+
+
+    .experience-step + .experience-step {
+
+        padding-top: 20px !important;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(185,130,125,0.35);
+    }
+
+
+    .experience-flower {
+
+        width: 180px;
+
+        right: -35px;
+
+        bottom: -45px;
+
+        opacity: 0.55;
+    }
+
+}
+/* =====================================================
+   THE BRIDAL EDIT
+===================================================== */
+
+.bridal-edit {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 38% 37% 25%;
+
+    align-items: center;
+
+    min-height: 300px;
+
+    background: #f7e6e2;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   BRIDAL IMAGE
+===================================================== */
+
+.bridal-edit-image {
+
+    width: 100%;
+
+    height: 320px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.bridal-edit-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center 30%;
+
+    transition: transform 0.7s ease;
+}
+
+
+.bridal-edit-image:hover img {
+
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   BRIDAL CONTENT
+===================================================== */
+
+.bridal-edit-content {
+
+    padding: 40px 45px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.bridal-edit-content .section-label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.bridal-edit-content h2 {
+
+    margin: 0 0 14px;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+}
+
+
+.bridal-edit-content p {
+
+    max-width: 360px;
+
+    margin: 0 0 22px;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* BUTTON */
+
+.bridal-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 38px;
+
+    padding: 0 23px;
+
+    border-radius: 25px;
+
+    background: #b9827d;
+
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+
+.bridal-btn:hover {
+
+    background: #9f6863;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BRIDAL STATS
+===================================================== */
+
+.bridal-stats {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    padding: 35px 8% 35px 10%;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.bridal-stat {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: #633f3b;
+}
+
+
+.stat-icon {
+
+    width: 28px;
+
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #b9827d;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+}
+
+
+.bridal-stat div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.bridal-stat strong {
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.bridal-stat span:not(.stat-icon) {
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =====================================================
+   DECORATIVE SOFT GLOW
+===================================================== */
+
+.bridal-edit::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -80px;
+
+    bottom: -100px;
+
+    width: 280px;
+
+    height: 280px;
+
+    background: rgba(255, 213, 207, 0.45);
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .bridal-edit {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .bridal-edit-image {
+
+        height: 420px;
+    }
+
+
+    .bridal-edit-content {
+
+        padding: 45px 7%;
+    }
+
+
+    .bridal-edit-content h2 {
+
+        font-size: 40px;
+    }
+
+
+    .bridal-stats {
+
+        padding: 10px 7% 45px;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .bridal-stat {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        text-align: center;
+    }
+
+
+    .bridal-stat div {
+
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+}
+/* =====================================================
+   MOMENTS OF BEAUTY — GALLERY
+===================================================== */
+
+.beauty-gallery {
+
+    display: grid;
+
+    grid-template-columns: 28% 72%;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 45px 7%;
+
+    background: #fffaf8;
+
+    border-top: 1px solid rgba(185,130,125,0.12);
+
+    border-bottom: 1px solid rgba(185,130,125,0.12);
+
+}
+
+
+/* =====================================================
+   GALLERY INTRO
+===================================================== */
+
+.gallery-intro {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.gallery-intro .section-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.gallery-intro h2 {
+
+    margin: 0 0 8px;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 36px;
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+.gallery-intro p {
+
+    margin: 0 0 18px;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   GALLERY BUTTON
+===================================================== */
+
+.gallery-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 34px;
+
+    padding: 0 18px;
+
+    border-radius: 20px;
+
+    background: #b9827d;
+
+    color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.3px;
+
+    transition: all 0.3s ease;
+}
+
+
+.gallery-btn:hover {
+
+    background: #9f6863;
+
+    transform: translateY(-2px);
+}
+
+
+.gallery-btn span {
+
+    font-size: 13px;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   IMAGE STRIP
+===================================================== */
+
+.gallery-strip {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 7px;
+
+    align-items: stretch;
+}
+
+
+.gallery-item {
+
+    height: 125px;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    background: #f2ddd8;
+
+    position: relative;
+}
+
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.08);
+
+    filter: brightness(0.92);
+}
+
+
+/* =====================================================
+   SUBTLE IMAGE OVERLAY
+===================================================== */
+
+.gallery-item::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(99,63,59,0.12),
+            transparent 50%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .beauty-gallery {
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        padding: 45px 6%;
+    }
+
+
+    .gallery-intro {
+
+        text-align: center;
+    }
+
+
+    .gallery-strip {
+
+        grid-template-columns:
+            repeat(5, 150px);
+
+        overflow-x: auto;
+
+        padding-bottom: 8px;
+
+        scrollbar-width: thin;
+    }
+
+
+    .gallery-item {
+
+        height: 170px;
+    }
+
+}
+/* =====================================================
+   TESTIMONIAL SECTION
+===================================================== */
+
+.testimonial-section {
+
+    position: relative;
+
+    min-height: 150px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 8%;
+
+    background:
+
+        linear-gradient(
+            rgba(255,239,235,0.82),
+            rgba(255,239,235,0.82)
+        ),
+
+        url("img/marble-bg.jpg")
+        center / cover no-repeat;
+
+    border-top: 1px solid rgba(185,130,125,0.15);
+
+    border-bottom: 1px solid rgba(185,130,125,0.15);
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TESTIMONIAL CONTENT
+===================================================== */
+
+.testimonial-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 650px;
+
+}
+
+
+.testimonial-quote {
+
+    display: block;
+
+    height: 12px;
+
+    color: #c18a84;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 30px;
+
+    line-height: 20px;
+
+}
+
+
+.testimonial-text {
+
+    margin: 5px 0 8px;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    font-weight: 500;
+
+    line-height: 1.05;
+
+}
+
+
+.testimonial-author {
+
+    display: block;
+
+    color: #a87873;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.7px;
+
+}
+
+
+/* =====================================================
+   STARS
+===================================================== */
+
+.testimonial-stars {
+
+    margin-top: 8px;
+
+    color: #a87873;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =====================================================
+   ARROWS
+===================================================== */
+
+.testimonial-arrow {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(185,130,125,0.3);
+
+    border-radius: 50%;
+
+    background: rgba(255,250,248,0.35);
+
+    color: #9f6863;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    z-index: 3;
+}
+
+
+.testimonial-arrow:hover {
+
+    background: #b9827d;
+
+    color: white;
+
+    border-color: #b9827d;
+}
+
+
+.testimonial-prev {
+
+    left: 12%;
+}
+
+
+.testimonial-next {
+
+    right: 12%;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .testimonial-section {
+
+        min-height: 170px;
+
+        padding: 30px 15%;
+    }
+
+
+    .testimonial-text {
+
+        font-size: 20px;
+    }
+
+
+    .testimonial-prev {
+
+        left: 5%;
+    }
+
+
+    .testimonial-next {
+
+        right: 5%;
+    }
+
+}/* =====================================================
+   LUXURY FINAL CTA
+===================================================== */
+
+.luxury-cta {
+
+    position: relative;
+
+    min-height: 310px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fdf0ed 0%,
+            #fff8f5 45%,
+            #fcebe7 100%
+        );
+
+    border-top: 1px solid rgba(185,130,125,0.18);
+
+    border-bottom: 1px solid rgba(185,130,125,0.18);
+
+}
+
+
+/* =====================================================
+   CTA MAIN CONTENT
+===================================================== */
+
+.cta-main {
+
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+
+    max-width: 650px;
+
+}
+
+
+.cta-eyebrow {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.cta-main h2 {
+
+    margin: 0;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 50px;
+
+    font-weight: 500;
+
+    line-height: 1.05;
+}
+
+
+.cta-main p {
+
+    margin: 12px 0 25px;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =====================================================
+   CTA BUTTONS
+===================================================== */
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.cta-book,
+.cta-wa {
+
+    min-height: 42px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.cta-book {
+
+    background: #b9827d;
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(185,130,125,0.18);
+}
+
+
+.cta-book:hover {
+
+    background: #9f6863;
+
+    transform: translateY(-2px);
+}
+
+
+.cta-wa {
+
+    color: #76504c;
+
+    border: 1px solid #c99b96;
+
+    background: rgba(255,255,255,0.35);
+}
+
+
+.cta-wa:hover {
+
+    background: white;
+
+    transform: translateY(-2px);
+}
+
+
+.wa-icon {
+
+    font-size: 14px;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   CTA SALON IMAGE
+===================================================== */
+
+.cta-image {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    width: 330px;
+
+    height: 245px;
+
+    overflow: hidden;
+
+    opacity: 0.9;
+
+    border-radius: 150px 0 0 0;
+
+}
+
+
+.cta-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fdf0ed 0%,
+            rgba(253,240,237,0.15) 45%,
+            rgba(253,240,237,0) 100%
+        );
+}
+
+
+.cta-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =====================================================
+   CHERRY BLOSSOM
+===================================================== */
+
+.cta-flower {
+
+    position: absolute;
+
+    left: -90px;
+
+    bottom: -70px;
+
+    width: 330px;
+
+    opacity: 0.55;
+
+    transform: rotate(-8deg);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   LUXURY DIVIDER
+===================================================== */
+
+.luxury-divider {
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    background: #fffaf8;
+}
+
+
+.luxury-divider span {
+
+    width: 120px;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d8b1ab
+        );
+}
+
+
+.luxury-divider span:last-child {
+
+    background:
+        linear-gradient(
+            90deg,
+            #d8b1ab,
+            transparent
+        );
+}
+
+
+.luxury-divider i {
+
+    color: #b9827d;
+
+    font-size: 11px;
+
+    font-style: normal;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.luxury-footer {
+
+    background: #fffaf8;
+
+    color: #633f3b;
+
+    padding: 55px 8% 0;
+
+}
+
+
+/* =====================================================
+   FOOTER GRID
+===================================================== */
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 60px;
+
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   FOOTER BRAND
+===================================================== */
+
+.footer-brand h2 {
+
+    margin: 0;
+
+    color: #633f3b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 31px;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+}
+
+
+.footer-brand p {
+
+    margin: 3px 0 18px;
+
+    color: #b9827d;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2.5px;
+}
+
+
+.brand-line {
+
+    display: block;
+
+    width: 35px;
+
+    height: 1px;
+
+    margin-bottom: 15px;
+
+    background: #c99b96;
+}
+
+
+.footer-brand small {
+
+    color: #8b6d68;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.footer-column h3 {
+
+    margin: 0 0 12px;
+
+    color: #9f6863;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.footer-column a,
+.footer-column p {
+
+    margin: 0;
+
+    color: #765d58;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-column a:hover {
+
+    color: #b9827d;
+
+}
+
+
+.contact-column p {
+
+    margin-bottom: 2px;
+}
+
+
+/* =====================================================
+   SOCIAL ROW
+===================================================== */
+
+.footer-social-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 50px;
+
+}
+
+
+.social-line {
+
+    width: 38%;
+
+    height: 1px;
+
+    background: rgba(185,130,125,0.18);
+}
+
+
+.footer-social {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.footer-social a {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #76504c;
+
+    border: 1px solid rgba(185,130,125,0.3);
+
+    border-radius: 50%;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-social a:hover {
+
+    background: #b9827d;
+
+    color: white;
+
+    border-color: #b9827d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   COPYRIGHT
+===================================================== */
+
+.footer-bottom {
+
+    margin-top: 35px;
+
+    padding: 17px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(185,130,125,0.14);
+
+    color: #a87873;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 6px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   FLOATING WHATSAPP
+===================================================== */
+
+.floating-whatsapp {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 1000;
+
+    background: #b9827d;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(99,63,59,0.18);
+
+    transition: all 0.3s ease;
+}
+
+
+.floating-whatsapp:hover {
+
+    transform: translateY(-4px);
+
+    background: #9f6863;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .luxury-cta {
+
+        min-height: 390px;
+
+        padding: 60px 25px;
+    }
+
+
+    .cta-main {
+
+        z-index: 5;
+    }
+
+
+    .cta-main h2 {
+
+        font-size: 39px;
+    }
+
+
+    .cta-main p {
+
+        font-size: 10px;
+    }
+
+
+    .cta-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .cta-book,
+    .cta-wa {
+
+        width: 200px;
+    }
+
+
+    .cta-image {
+
+        width: 230px;
+
+        height: 180px;
+
+        opacity: 0.25;
+    }
+
+
+    .cta-flower {
+
+        width: 240px;
+
+        left: -80px;
+
+        opacity: 0.3;
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+
+        text-align: left;
+    }
+
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+    }
+
+
+    .footer-social-row {
+
+        margin-top: 40px;
+    }
+
+
+    .social-line {
+
+        width: 25%;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .footer-brand {
+
+        grid-column: auto;
+
+    }
+
+
+    .footer-column {
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .footer-brand {
+
+        text-align: center;
+
+        align-items: center;
+    }
+
+
+    .brand-line {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .footer-bottom {
+
+        font-size: 6px;
+    }
+
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav>
+
+    <div class="logo">
+
+        LUMIÈRE
+
+        <small>
+            BEAUTY & BRIDAL STUDIO
+        </small>
+
+    </div>
+
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="#home">HOME</a>
+        </li>
+
+        <li>
+            <a href="#about">ABOUT</a>
+        </li>
+
+        <li>
+            <a href="#services">SERVICES</a>
+        </li>
+
+        <li>
+            <a href="#bridal">BRIDAL</a>
+        </li>
+
+        <li>
+            <a href="#gallery">GALLERY</a>
+        </li>
+
+        <li>
+            <a href="#contact">CONTACT</a>
+        </li>
+
+    </ul>
+
+
+    <a href="#contact" class="book-btn">
+
+        BOOK APPOINTMENT
+
+    </a>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+
+        <div class="hero-small">
+
+            LUXURY BEAUTY & BRIDAL STUDIO
+
+        </div>
+
+
+        <h1>
+
+            Beauty,<br>
+
+            Refined.
+
+        </h1>
+
+
+        <p>
+
+            Where elegance meets artistry.
+            Discover personalized hair, makeup and bridal
+            experiences created just for you.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a
+                href="#contact"
+                class="btn btn-gold"
+            >
+
+                BOOK APPOINTMENT
+
+            </a>
+
+
+            <a
+                href="#services"
+                class="btn btn-outline"
+            >
+
+                EXPLORE SERVICES
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     LUXURY FEATURE STRIP
+===================================================== -->
+
+<section class="feature-strip">
+
+    <div class="feature-item">
+        <span class="flower-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+
+        <span>PREMIUM BEAUTY</span>
+    </div>
+
+
+    <div class="feature-divider"></div>
+
+
+    <div class="feature-item">
+        <span class="flower-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+
+        <span>BRIDAL SPECIALISTS</span>
+    </div>
+
+
+    <div class="feature-divider"></div>
+
+
+    <div class="feature-item">
+        <span class="flower-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+
+        <span>PERSONALIZED SERVICE</span>
+    </div>
+
+
+    <div class="feature-divider"></div>
+
+
+    <div class="feature-item">
+        <span class="flower-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+
+        <span>100% ATTENTION TO DETAIL</span>
+    </div>
+
+</section>
+<!-- =====================================================
+     SIGNATURE SERVICES
+===================================================== -->
+
+<section class="signature-section" id="services">
+
+    <div class="signature-header">
+
+        <div>
+            <span class="section-label">
+                OUR SIGNATURE
+            </span>
+
+            <h2>
+                Beauty, Your Way
+            </h2>
+        </div>
+
+        <a href="#contact" class="view-services">
+            VIEW ALL SERVICES →
+        </a>
+
+    </div>
+
+
+    <div class="service-cards">
+
+
+        <!-- HAIR -->
+
+        <div class="service-card">
+
+            <img
+                src="img/hair.jpg"
+                alt="Luxury Hair Styling"
+            >
+
+            <div class="service-overlay">
+
+                <h3>HAIR</h3>
+
+                <p>
+                    Cut • Style • Color
+                </p>
+
+                <a href="#contact">
+                    EXPLORE →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MAKEUP -->
+
+        <div class="service-card">
+
+            <img
+                src="img/makeup.jpg"
+                alt="Professional Makeup"
+            >
+
+            <div class="service-overlay">
+
+                <h3>MAKEUP</h3>
+
+                <p>
+                    Soft Glam • HD • Editorial
+                </p>
+
+                <a href="#contact">
+                    EXPLORE →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BRIDAL -->
+
+        <div class="service-card">
+
+            <img
+                src="img/bridal.jpg"
+                alt="Bridal Makeup"
+            >
+
+            <div class="service-overlay">
+
+                <h3>BRIDAL</h3>
+
+                <p>
+                    Your Day. Our Signature Look.
+                </p>
+
+                <a href="#contact">
+                    EXPLORE →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     LUMIÈRE EXPERIENCE
+===================================================== -->
+
+<section class="experience-section" id="about">
+
+    <!-- SALON IMAGE -->
+
+    <div class="experience-image">
+
+        <img
+            src="img/exp.jpg"
+            alt="Lumière Beauty Salon Interior"
+        >
+
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div class="experience-content">
+
+        <span class="section-label">
+            THE LUMIÈRE EXPERIENCE
+        </span>
+
+
+        <h2>
+            More than a beauty<br>
+            appointment.
+        </h2>
+
+
+        <p class="experience-text">
+
+            From the first consultation to the final reveal,
+            every detail is thoughtfully designed around you.
+            Our goal is simple — to make you feel confident,
+            comfortable and completely yourself.
+
+        </p>
+
+
+        <!-- THREE STEPS -->
+
+        <div class="experience-steps">
+
+
+            <div class="experience-step">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <h3>
+                    CONSULT
+                </h3>
+
+                <p>
+                    We understand your style
+                    and vision.
+                </p>
+
+            </div>
+
+
+
+            <div class="experience-step">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <h3>
+                    CREATE
+                </h3>
+
+                <p>
+                    Our artists bring
+                    your look to life.
+                </p>
+
+            </div>
+
+
+
+            <div class="experience-step">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <h3>
+                    REVEAL
+                </h3>
+
+                <p>
+                    Step out feeling
+                    completely you.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- CHERRY BLOSSOM -->
+
+    <img
+        src="img/cb.png"
+        class="experience-flower"
+        alt=""
+    >
+
+</section>
+<!-- =====================================================
+     THE BRIDAL EDIT
+===================================================== -->
+
+<section class="bridal-edit" id="bridal">
+
+    <!-- BRIDAL IMAGE -->
+
+    <div class="bridal-edit-image">
+
+        <img
+            src="img/bridal1.jpg"
+            alt="Traditional Tamil Bridal Makeup"
+        >
+
+    </div>
+
+
+    <!-- BRIDAL CONTENT -->
+
+    <div class="bridal-edit-content">
+
+        <span class="section-label">
+            THE BRIDAL EDIT
+        </span>
+
+
+        <h2>
+            Your Day. Your Signature.
+        </h2>
+
+
+        <p>
+            Timeless bridal beauty crafted with patience,
+            precision and a little magic.
+        </p>
+
+
+        <a href="#contact" class="bridal-btn">
+            EXPLORE BRIDAL
+        </a>
+
+    </div>
+
+
+    <!-- BRIDAL STATS -->
+
+    <div class="bridal-stats">
+
+        <div class="bridal-stat">
+
+            <span class="stat-icon">♧</span>
+
+            <div>
+                <strong>250+</strong>
+                <span>BRIDES</span>
+            </div>
+
+        </div>
+
+
+        <div class="bridal-stat">
+
+            <span class="stat-icon">♧</span>
+
+            <div>
+                <strong>8+</strong>
+                <span>YEARS</span>
+            </div>
+
+        </div>
+
+
+        <div class="bridal-stat">
+
+            <span class="stat-icon">✧</span>
+
+            <div>
+                <strong>5★</strong>
+                <span>EXPERIENCE</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     MOMENTS OF BEAUTY — GALLERY
+===================================================== -->
+
+<section class="beauty-gallery" id="gallery">
+
+    <!-- LEFT CONTENT -->
+
+    <div class="gallery-intro">
+
+        <span class="section-label">
+            THE GALLERY
+        </span>
+
+        <h2>
+            Moments of Beauty
+        </h2>
+
+        <p>
+            Real people. Real transformations.
+            Timeless beauty.
+        </p>
+
+        <a href="#" class="gallery-btn">
+            VIEW GALLERY
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+    <!-- IMAGE STRIP -->
+
+    <div class="gallery-strip">
+
+        <div class="gallery-item">
+            <img
+                src="img/gallery-1.jpg"
+                alt="Hair styling"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="img/gallery-2.jpg"
+                alt="Beauty makeup"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="img/hero.jpg"
+                alt="Lumière salon"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="img/gallery-4.jpg"
+                alt="Nail beauty"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="img/gallery-5.jpg"
+                alt="Bridal beauty"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     TESTIMONIAL
+===================================================== -->
+
+<section class="testimonial-section">
+
+    <button class="testimonial-arrow testimonial-prev">
+        ‹
+    </button>
+
+
+    <div class="testimonial-content">
+
+        <span class="testimonial-quote">
+            “
+        </span>
+
+        <p class="testimonial-text">
+            I didn't just feel beautiful.<br>
+            I felt like myself — only more confident.
+        </p>
+
+        <span class="testimonial-author">
+            — AANYA R. · BRIDAL CLIENT
+        </span>
+
+        <div class="testimonial-stars">
+            ★ ★ ★ ★ ★
+        </div>
+
+    </div>
+
+
+    <button class="testimonial-arrow testimonial-next">
+        ›
+    </button>
+
+</section>
+<!-- =====================================================
+     DECORATIVE DIVIDER
+===================================================== -->
+
+<div class="luxury-divider">
+
+    <span></span>
+    <i>✦</i>
+    <span></span>
+
+</div>
+
+<!-- =====================================================
+     LUXURY FINAL CTA
+===================================================== -->
+
+<section class="luxury-cta" id="contact">
+
+    <!-- Decorative floral image -->
+    <img src="img/cb.png"
+         class="cta-flower"
+         alt="">
+
+    <div class="cta-main">
+
+        <span class="cta-eyebrow">
+            YOUR BEAUTY BEGINS HERE
+        </span>
+
+        <h2>
+            Ready for your next look?
+        </h2>
+
+        <p>
+            Let's create something beautiful together.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="#" class="cta-book">
+                BOOK YOUR APPOINTMENT
+            </a>
+
+            <a href="#" class="cta-wa">
+                <span class="wa-icon">◔</span>
+                WHATSAPP US
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Small decorative salon image -->
+
+    <div class="cta-image">
+
+        <img src="img/exp.jpg"
+             alt="Lumière Beauty Studio">
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DECORATIVE DIVIDER
+===================================================== -->
+
+<div class="luxury-divider">
+
+    <span></span>
+    <i>✦</i>
+    <span></span>
+
+</div>
+
+
+<!-- =====================================================
+     LUXURY FOOTER
+===================================================== -->
+
+<footer class="luxury-footer">
+
+    <div class="footer-grid">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <h2>LUMIÈRE</h2>
+
+            <p>
+                BEAUTY & BRIDAL STUDIO
+            </p>
+
+            <span class="brand-line"></span>
+
+            <small>
+                Timeless beauty.<br>
+                Thoughtfully created for you.
+            </small>
+
+        </div>
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-column">
+
+            <h3>EXPLORE</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#bridal">Bridal</a>
+
+            <a href="#gallery">Gallery</a>
+
+        </div>
+
+
+        <!-- SERVICES -->
+
+        <div class="footer-column">
+
+            <h3>SERVICES</h3>
+
+            <a href="#services">Hair</a>
+
+            <a href="#services">Makeup</a>
+
+            <a href="#bridal">Bridal</a>
+
+            <a href="#services">Nails</a>
+
+            <a href="#services">Beauty Care</a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column contact-column">
+
+            <h3>CONTACT</h3>
+
+            <p>
+                Madurai, Tamil Nadu
+            </p>
+
+            <a href="tel:+919000000000">
+                +91 90000 00000
+            </a>
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+            <a href="#">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SOCIAL ROW -->
+
+    <div class="footer-social-row">
+
+        <div class="social-line"></div>
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="Instagram">
+                ◎
+            </a>
+
+            <a href="#" aria-label="WhatsApp">
+                ◔
+            </a>
+
+            <a href="#" aria-label="Location">
+                ♧
+            </a>
+
+        </div>
+
+        <div class="social-line"></div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Lumière Beauty. All Rights Reserved.
+        </span>
+
+        <span>
+            BEAUTY • BRIDAL • SELF CARE
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a href="#"
+   class="floating-whatsapp"
+   aria-label="WhatsApp">
+
+    ◔
+
+</a>
+</body>
+
+</html>
